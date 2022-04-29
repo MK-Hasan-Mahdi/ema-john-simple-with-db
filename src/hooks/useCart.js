@@ -9,7 +9,7 @@ const useCart = () => {
         const savedCart = [];
         const keys = Object.keys(storedCart);
         console.log(keys);
-        fetch('', {
+        fetch('http://localhost:5000/productByKeys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
